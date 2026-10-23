@@ -1,0 +1,131 @@
+START SCENARIO_1
+
+Firstly,
+
+declare a and instatitate  a variable called "numbers_array", which will be of an array data type that will be used to store all of the input values, the default value will be and empty array '[]'
+
+Next,
+
+declare a new variable called "input_number" and assign it to a default value of 1 (to enter the loop)
+
+start a while loop (if the value of input_number is greater than 0, enter the loop)
+	First,  override the "input_number" variable and assign it to the value of the input() function. Inside the brackets (parenthesis) display a message "Type a number (type 0 to sort) : "
+	Secondly, convert the value into an integer (to prevent any type error exceptions)
+	Then, push the value of input_number onto the end of the numbers_array
+	
+	(This loops until 0 is given.)
+end while loop
+
+(When 0 is given as an input, the while loop will break and the program will continue its execution)
+
+if the number of items in the numbers_array is equal to 0 then output 0 to the console and terminate the program
+
+else
+
+	(at this stage i would use a max function to determine the maximum value in an array but for the purposes of this demonstration, i will demonstrate an in depth algorithm)
+
+	Now, 
+	Decalare a new variable called max_value and assign it to the first index of the "numbers_array" ie. numbers_array[0]
+
+	if the number of items in the numbers_array is equal to 1 then output the value of max_value and terminate the program
+	
+	else
+
+		start a for loop
+			Firstly, Decalare a variable to track the current_index, by default, this should be the second index in the array
+			Secondly, set a condition that if the index is less than the number of items in the array, that the loop should continue otherwise the loop will terminate
+			
+			if the value of the current_index is more than the value of the previous_index then overwrite the value in max_value with the value of the current_index
+			
+			else
+				move onto the next index (continue)
+			
+			Then, increment the value of the current_index by one
+			
+			(This loops until the end of the array is reached)
+
+		end for loop
+		
+		Then print the value of max_value to the console and terminate the program
+
+
+END SCENARIO_1
+
+
+START SCENARIO_2
+
+Firstly, declare a variable called first_name and assign it value of the function input(). Inside the brackets (parenthesis), display a message that says "What is your First Name? : "
+Secondly, make sure that this value is converted to a string data type (to prevent any type error exceptions)
+
+Then, 
+print the value of first_name to the console using the print() function
+
+On a separate line, using the print() function again, print "Hello, World" out to the console and then terminate the program
+
+(On a side note the input of first_name could be put inside a while loop so that the program does not terminate until a first name is declared or x is given to exit)
+
+
+END SCENARIO_2
+
+START SCENARIO_3
+
+define a new variable called new_number and default it to 1 (this willl be the temporrary storage for ther input nmber)
+define a new variable called number_count and default it to 0 (this will track the amount of numbers we have)
+define a new variable called running_total and give it a default value of 0 (This will track the sum of all of the numbers added together)
+
+start while loop - the while loop will loop until 0 is given 
+	re-declare the new_number variable but give it a assignment of the value coming from the input function, the message should read "Please Enter a number : "
+	convert the value of new_number to an integer
+	
+	if the value of new_number is greater than 0
+		then, add the value of new_number to the value of running_total
+		then, add one to the number_count
+	else
+		the loop will exit
+		
+		
+end while loop
+
+assign to a new variable called output the value of the running total divided by the number_count
+
+print the value of output to the console and terminate the program (this can also be done in one line)
+
+END SCENARIO_3
+
+START SCENARIO_4
+
+Declare 2 arrays, one called grocery_list and the other bought_items - The grocery items should be the full list to be bought, where as the bought items are the items already in the cart
+
+declare another array called items_to_purchase and default this to an empty array
+
+start a for loop and loop around the grocery_list
+	
+	if an item in grocery_list does not exist in bought_items list
+		append/push that item to the end of the items_to_purchase list
+
+end for loop
+
+print out the items_to_purchase list but wrap the list in a sort function to sort it alphabetically
+
+Terminate the program
+
+END SCENARIO_4
+
+START SCENARIO_5
+
+Declare and intstatiate both X and Y variables
+Convert both X and Y variables into integers
+
+Declare and Instatiate a new variable called S and give it the value of the expression X + Y
+
+Declare and Instatiate a new variable called A and give it the value of the expression S / 2
+
+Declare and Instatiate a new variable called P and give it the value of the expression X * Y
+
+print the values of S, A, P in the console
+
+Terminate the program
+
+
+END SCENARIO_5
+
